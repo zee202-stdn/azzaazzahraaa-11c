@@ -171,6 +171,87 @@ form button:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(150, 120, 170, 0.3);
 }
+.kontak-container{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #c99f9f;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(150, 120, 170, 0.3);
+}
+
+.kontak-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kontak-info{
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.kontak-info i{
+    color: #5d1b5d;
+}
+
+.kontak-form input,
+.kontak-form textarea{
+    background-color: #f9f4fb;
+    border: 1px solid #b69eb0;
+}
+
+.kontak-form button{
+    width: 100%;
+    font-weight: bold;
+}
+.event-container{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.event-card{
+    background-color: azure;
+    border-left: 6px solid #a56ea5;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(150, 120, 170, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(150, 120, 170, 0.4);
+}
+
+.event-card h3{
+    margin-top: 0;
+    color: #5d1b5d;
+}
+
+.event-detail{
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.btn-daftar{
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #745074;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-daftar:hover{
+    background-color: #d1b3d9;
+    transform: scale(1.1);
+}
+
 
 
 
