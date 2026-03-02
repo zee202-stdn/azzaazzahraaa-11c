@@ -68,7 +68,7 @@ nav a:hover::after {
 
 /* Hover teks */
 nav a:hover {
-  color:#800080;
+  color:#aa00ff;
 }
 
 /* Active page underline (optional) */
@@ -309,6 +309,7 @@ form button:hover{
     border-radius: 10px;
     width: 300px;
 }
+
 
 
 
