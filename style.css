@@ -31,18 +31,13 @@ p{
     font-family: Harrington;
     font-size: large;
 }
-nav{
-    background-color: rgb(196, 166, 192);
-    font-size: larger;
-    text-align: center;
-    
-}
 nav {
   display: flex;
+ justify-content: center;
   gap: 25px; /* Jarak antar menu */
   background-color: #f8f8f8; /* Warna background nav */
   padding: 15px 30px;
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Neue', cursive;
 }
 
 nav a {
@@ -314,6 +309,7 @@ form button:hover{
     border-radius: 10px;
     width: 300px;
 }
+
 
 
 
