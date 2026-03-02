@@ -19,29 +19,23 @@
        <a href="kontak.html">kontak kami</a>
     <a href="event.html">event</a>
   </nav> 
-<h2>Form Pendaftaran Event</h2>
+<div class="event-container">
 
-<form id="formEvent">
-    <label>Nama:</label><br>
-    <input type="text" id="nama" required><br><br>
+    <div class="event-card">
+        <h3>Bedah Buku 2026</h3>
+        <p class="event-detail">📅 20 maret 2026</p>
+        <p class="event-detail">📍 Aula Kota</p>
+        <a href="#" class="btn-daftar">Daftar Sekarang</a>
+    </div>
 
-    <label>Email:</label><br>
-    <input type="email" id="email" required><br><br>
+    <div class="event-card">
+        <h3>Diskusi Penulis</h3>
+        <p class="event-detail">📅 25 Mei 2026</p>
+        <p class="event-detail">📍 Perpustakaan Umum</p>
+        <a href="#" class="btn-daftar">Daftar Sekarang</a>
+    </div>
 
-    <button type="submit">Daftar</button>
-</form>
-
-<p id="hasil"></p>
-
-<script>
-document.getElementById("formEvent").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let nama = document.getElementById("nama").value;
-    document.getElementById("hasil").innerHTML =
-        "Terima kasih <b>" + nama + "</b> sudah mendaftar event!";
-});
-</script>
+</div>
   <footer>
      <img src="zee1.png" alt="header" width="1312" height="500">
     <p>&copy; 2025 isi kepala jam 2 pagi</p>
