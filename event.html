@@ -21,64 +21,57 @@
     <a href="kontak.html">kontak kami</a>
     <a href="event.html">event</a>
 </nav>
+<div class="event-card">
+    <h3>Bedah Buku 2026</h3>
+    <p class="event-detail">📅 20 maret 2026</p>
+    <p class="event-detail">📍 Aula Kota</p>
 
-<main>
+   <a href="daftar-event.html" class="btn-daftar">Daftar Sekarang</a>
+</div>
+
+<!-- FORM POPUP -->
+<div id="formPopup" class="popup-form">
+    <form id="formDaftar">
+        <h3>Form Pendaftaran</h3>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Kirim</button>
+        <button type="button" onclick="tutupForm()">Batal</button>
+    </form>
+</div>
+
+<p id="hasilDaftar"></p>
+
     <div class="event-card">
-        <h3>Bedah Buku 2026</h3>
-        <p class="event-detail">📅 20 Maret 2026</p>
-        <p class="event-detail">📍 Aula Kota</p>
-        <button class="btn-daftar" onclick="bukaForm()">Daftar Sekarang</button>
-    </div>
+    <h3>Diskusi Penulis 2026</h3>
+    <p class="event-detail">📅 28 september 2026</p>
+    <p class="event-detail">📍 Aula Kota</p>
 
-    <div class="event-card">
-        <h3>Diskusi Penulis 2026</h3>
-        <p class="event-detail">📅 28 September 2026</p>
-        <p class="event-detail">📍 Aula Kota</p>
-        <button class="btn-daftar" onclick="bukaForm()">Daftar Sekarang</button>
-    </div>
+   <a href="daftar-event.html" class="btn-daftar">Daftar Sekarang</a>
+</div>
 
-    <!-- Popup Form -->
-    <div id="formPopup" class="popup-form">
-        <form id="formDaftar">
-            <h3>Form Pendaftaran</h3>
+<!-- FORM POPUP -->
+<div id="formPopup" class="popup-form">
+    <form id="formDaftar">
+        <h3>Form Pendaftaran</h3>
 
-            <label>Nama</label>
-            <input type="text" id="nama" required>
+        <label>Nama</label>
+        <input type="text" id="nama" required>
 
-            <label>Email</label>
-            <input type="email" id="email" required>
+        <label>Email</label>
+        <input type="email" id="email" required>
 
-            <button type="submit">Kirim</button>
-            <button type="button" onclick="tutupForm()">Batal</button>
-        </form>
-    </div>
+        <button type="submit">Kirim</button>
+        <button type="button" onclick="tutupForm()">Batal</button>
+    </form>
+</div>
 
-    <!-- Pesan -->
-    <p id="hasilDaftar"></p>
-</main>
-
-<footer>
-    <img src="zee1.png" alt="footer" width="1312" height="500">
-    <p>&copy; 2026 Profil Usaha Buku</p>
-</footer>
-
-<script>
-function bukaForm(){
-    document.getElementById("formPopup").style.display = "flex";
-}
-function tutupForm(){
-    document.getElementById("formPopup").style.display = "none";
-}
-
-// Submit form
-document.getElementById("formDaftar").addEventListener("submit", function(e){
-    e.preventDefault();
-    let nama = document.getElementById("nama").value;
-    document.getElementById("hasilDaftar").innerHTML = "Terima kasih <b>"+nama+"</b> sudah mendaftar!";
-    tutupForm();
-});
-</script>
-
+<p id="hasilDaftar"></p>
 </body>
 </html>
 
