@@ -57,7 +57,7 @@ nav a::after {
   height: 2px;
   left: 0;
   bottom: 0;
-  background-color: #ff6600; /* Warna garis bawah */
+  background-color: #800080; /* Warna garis bawah */
   transition: width 0.3s ease;
 }
 
@@ -309,6 +309,7 @@ form button:hover{
     border-radius: 10px;
     width: 300px;
 }
+
 
 
 
