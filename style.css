@@ -252,6 +252,42 @@ form button:hover{
     transform: scale(1.1);
 }
 
+/* Animasi muncul */
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sosial Media */
+.sosial-media{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sosial-media a{
+    display: inline-block;
+    margin: 8px;
+    padding: 8px 14px;
+    background-color: #745074;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.sosial-media a:hover{
+    background-color: #d1b3d9;
+    transform: scale(1.1);
+}
+
 
 
 
