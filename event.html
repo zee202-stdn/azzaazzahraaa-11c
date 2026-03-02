@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>profil usaha buku</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <img src="zee.png" alt="header" width="1312" height="500">
+</header>
+  <nav>
+    <a href="index.html">beranda</a>
+    <a href="produk.html">produk</a>
+    <a href="bedah-buku.html">bedah buku</a>
+    <a href="testimoni.html">tertimoni</a>
+    <a href="tampil-testimoni.html">testimoni pembeli</a>
+       <a href="kontak.html">kontak kami</a>
+    <a href="event.html">event</a>
+  </nav> 
+<h2>Form Pendaftaran Event</h2>
+
+<form id="formEvent">
+    <label>Nama:</label><br>
+    <input type="text" id="nama" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <button type="submit">Daftar</button>
+</form>
+
+<p id="hasil"></p>
+
+<script>
+document.getElementById("formEvent").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nama = document.getElementById("nama").value;
+    document.getElementById("hasil").innerHTML =
+        "Terima kasih <b>" + nama + "</b> sudah mendaftar event!";
+});
+</script>
+  
+
+</body>
+</html>
 
