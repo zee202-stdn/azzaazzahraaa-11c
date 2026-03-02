@@ -6,19 +6,7 @@
 <title>profil usaha buku</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-    <script>
-const targetDate = new Date("maret 20, 2026 09:00:00").getTime();
-const countdownElement = document.getElementById("countdown1");
-
-setInterval(function(){
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-    countdownElement.innerHTML = "Sisa waktu: " + 100 + " hari lagi";
-}, 1000);
-</script>
+   
 <body>
 <header>
     <img src="zee.png" alt="header" width="1312" height="500">
@@ -32,23 +20,59 @@ setInterval(function(){
        <a href="kontak.html">kontak kami</a>
     <a href="event.html">event</a>
   </nav> 
-<div class="event-container">
+    
+<div class="event-card">
+    <h3>Bedah Buku 2026</h3>
+    <p class="event-detail">📅 20 maret 2026</p>
+    <p class="event-detail">📍 Aula Kota</p>
 
-    <div class="event-card">
-        <h3>Bedah Buku 2026</h3>
-        <p class="event-detail">📅 20 maret 2026</p>
-        <p class="event-detail">📍 Aula Kota</p>
-        <a href="#" class="btn-daftar">Daftar Sekarang</a>
-    </div>
-
-    <div class="event-card">
-        <h3>Diskusi Penulis</h3>
-        <p class="event-detail">📅 25 Mei 2026</p>
-        <p class="event-detail">📍 Perpustakaan Umum</p>
-        <a href="#" class="btn-daftar">Daftar Sekarang</a>
-    </div>
-
+    <button onclick="bukaForm()">Daftar Sekarang</button>
 </div>
+
+<div id="formPopup" class="popup-form">
+    <form id="formDaftar">
+        <h3>Form Pendaftaran</h3>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Kirim</button>
+        <button type="button" onclick="tutupForm()">Batal</button>
+    </form>
+</div>
+
+<p id="hasilDaftar"></p>
+
+
+    <div class="event-card">
+    <h3>Diskusi Penulis 2026</h3>
+    <p class="event-detail">📅 28 september 2026</p>
+    <p class="event-detail">📍 Aula Kota</p>
+
+    <button onclick="bukaForm()">Daftar Sekarang</button>
+</div>
+
+<div id="formPopup" class="popup-form">
+    <form id="formDaftar">
+        <h3>Form Pendaftaran</h3>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Kirim</button>
+        <button type="button" onclick="tutupForm()">Batal</button>
+    </form>
+</div>
+
+<p id="hasilDaftar"></p>
+
+    
   <footer>
      <img src="zee1.png" alt="header" width="1312" height="500">
     <p>&copy; 2025 isi kepala jam 2 pagi</p>
