@@ -20,29 +20,25 @@
     <a href="event.html">event</a>
   </nav> 
 
-  <section id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Jika ingin bertanya atau memesan buku, silakan hubungi kami melalui:</p>
-    <ul>
-    <li>Email: <a href="mailto:info@isikepalajam2pagi.com">info@isikepalajam2pagi.com</a></li> 
-    <li>Telepon/WhatsApp: <a href="tel:+6281234567890">+62 812-3456-7890</a></li>
-    <li>Instagram: <a href="https://instagram.com/isikepalajam2pagi" target="_blank">@isikepalajam2pagi</a></li> 
-    <li>Alamat: Jl. bojong gede No. 123, surabaya, Jawa Timur</li>
-  </ul> 
-    
-    <form action="proses-kontak.php" method="post">
-    <label for="nama">Nama:</label><br>
-    <input type="text" id="nama" name="nama" required><br><br>
-      
-    <label for="email">Email:</label><br> 
-    <input type="email" id="email" name="email" required><br><br>
-      
-    <label for="pesan">Pesan:</label><br>
-    <textarea id="pesan" name="pesan" rows="5" required></textarea><br><br> 
-      
-    <button type="submit">Kirim</button> 
-  </form> 
-  </section>
+<div class="kontak-container">
+    <h2>Hubungi Kami</h2>
+
+    <div class="kontak-info">
+        <p>Email: isikepalajam2pagi@gmail.com</p>
+        <p>WhatsApp: 08123456789</p>
+        <p>Alamat: surabaya</p>
+    </div>
+
+    <form class="kontak-form">
+        <label>Nama</label>
+        <input type="text" required>
+
+        <label>Pesan</label>
+        <textarea rows="4" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</div>
 <footer>
      <img src="zee1.png" alt="header" width="1312" height="500">
     <p>&copy; 2025 isi kepala jam 2 pagi</p>
